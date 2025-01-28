@@ -70,3 +70,50 @@ const obj2 = {
 }
 
 obj2.myfunction();
+
+
+// calbacks in JavaScript //
+
+function calling (a , b , c ) {
+   let ans = a+b ;
+   c(ans);
+}
+
+calling( 10 ,20 , function display(ans) {
+  console.log(ans);
+})
+
+// callbacks in arrow function //
+
+function calling2( a , b , c) {
+   let ans = a*b ;
+   c(ans);
+}
+
+calling2 ( 10 ,20 , (result) => {
+  console.log(result);
+}) 
+
+//arr items //
+
+const arr = ["1" , "2" , "3" , 4 , true ]
+console.log(arr);
+console.log(arr.length)
+arr.push(false);
+arr.push("10");
+console.log(arr.length);
+arr.pop();
+arr.pop();
+console.log(arr.length);
+console.log(arr.lastIndexOf('1'));
+console.log(arr.lastIndexOf('10'));
+console.log(arr)
+
+//higher order of array //
+
+const arr2 = ["1" , "2" , "3" , 4 , true ] 
+console.log(arr2) ;
+arr2.slice(1,3);
+console.log(arr2);
+arr2.splice(1,4);
+console.log(arr2);
