@@ -1,5 +1,5 @@
 // arguments in functions of JS //
-
+/* 
 function addNumbers() {
   console.log(arguments);
   let ans = 0;
@@ -116,4 +116,4 @@ console.log(arr2) ;
 arr2.slice(1,3);
 console.log(arr2);
 arr2.splice(1,4);
-console.log(arr2);
+console.log(arr2);*/

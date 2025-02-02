@@ -1,0 +1,1 @@
+There is an issue in your readFileAsync function. The problem is that fs.readFile is an asynchronous function, meaning it does not return the file content immediately. Instead, it takes a callback function to handle the file content after it is read.
